@@ -1,0 +1,19 @@
+body{
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+.success {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+  }
+  
+  .success h1 {
+    padding-top: 50px;
+    padding-left: 80px;
+    color: #2C272E;
+  }
