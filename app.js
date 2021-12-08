@@ -10,8 +10,8 @@ const port = 3000;
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const md5 = require("md5");
 mailchimp.setConfig({
-    apiKey: "dc39633aa8b3abadf1878ab15abbbaec-us20",
-    server: "us20"
+    apiKey: "yourApiKey",
+    server: "serverzone"
 });
 
 // allows to apply style to the page.
@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended: true}));
 app.get('/', (req, res)=>{
     res.sendFile(__dirname + "/signup.html");
 });
-const listId = "efb3d1ab7b";
+const listId = "yourListId";
 app.post('/', (req, res)=>{
     const fname = req.body.fname;
     const lname = req.body.lname;
@@ -64,9 +64,3 @@ app.post('/failure', (req, res)=>{
 app.listen(process.env.PORT || port, ()=>{
     console.log(`http://localhost:${port}`);
 });
-
-// API Key
-// dc39633aa8b3abadf1878ab15abbbaec-us20
-
-// List I
-// efb3d1ab7b
